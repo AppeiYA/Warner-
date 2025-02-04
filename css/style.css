@@ -12,7 +12,6 @@ body{
     flex-direction: column;
     margin: 0;
     width: 100vw;
-    border: 1px solid red;
     height: max-content;
 }
 
@@ -290,7 +289,7 @@ header ul li div .download-app{
     margin: 5px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 768px) {
     body{
         width:500px
     }
