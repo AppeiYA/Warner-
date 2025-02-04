@@ -1,0 +1,319 @@
+html{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100vw;
+    border: 1px solid red;
+    height: max-content;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1000;
+    transition: background-color 1s ease;
+    width: 100%;
+}
+.transparent-header {
+    background-color: transparent;
+}
+.solid-header{
+    background: linear-gradient(to right, #02013d, #1f023f);
+}
+header ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+header ul li{
+    display: flex;
+    align-items: center;
+}
+header ul li p{
+    vertical-align: middle;
+    color: white;
+    font-weight: bolder;
+    font-size: 14.5pt;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+header ul li a img{
+    width: 35px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+header ul li div {
+    margin-right: 30px;
+}
+header ul li div a {
+    text-decoration: none;
+    color: white;
+}
+header ul li div .download-app{
+    background-color: rgba(34, 32, 32, 0.63);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-size: 10pt;
+    margin-right: 5px;
+}
+
+.carousel{
+    height: 25vh;
+    width: 93vw;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.carousel .images{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+}
+.images img{
+    /* display: none; */
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+
+
+.welcome{
+    margin: 0;
+    background-color: rgb(34, 32, 32);
+    padding: 0;
+    margin-left: 12px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 93vw;
+}
+.welcome p {
+    color: white;
+    font-size: 10.5pt;
+    margin-left: 5px;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.invest ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+.invest ul li a{
+    text-decoration: none;
+}
+.invest ul li div p{
+    color: white;
+    margin-top: 0;
+    font-size: 10pt;
+    width: 60px;
+}
+.invest ul li div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.invest ul li div img{
+    width: 30px;
+    align-self: center;
+}
+
+.goto-task{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 93vw;
+}
+.goto-task h1{
+    color: white;
+    font-size: 12pt;
+    margin-left: 5px;
+}
+.goto-task .goto-task-button{
+    background: linear-gradient(to right, #02013d, #1f023f);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+}
+.goto-task-button .task-icon{
+   font-size: 35pt;
+   margin-top: 10px;
+   margin-right: 10px;
+}
+.goto-task-button .task-text{
+    margin-top: 10px;
+}
+.goto-task-button p {
+    margin-bottom: 0;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.display-goods {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.display-goods .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.display-goods .intro p {
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.display-goods .intro button{
+    background: none;
+    color: blueviolet;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.display-goods .my-goods{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.display-goods .my-goods .good{
+    margin-bottom: 10px;
+    width: 42vw;
+}
+.display-goods .my-goods .good img{
+    width: 100%;     
+    height: 100px;    
+    object-fit: cover; 
+    object-position: center; 
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.display-goods .my-goods .good .good-details{
+    background-color: rgb(17, 16, 16);
+    padding: 5px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.display-goods .my-goods .good .good-details p{
+    color: white;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.display-goods .my-goods .good .good-details .rating{
+    color: gold;
+    font-size: 13pt;
+    padding-top: 5px;
+}
+.display-goods .my-goods .good .good-details button{
+    background: linear-gradient(to right, #02013d, #280d46);
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 90%;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+
+.last-section{
+    margin-bottom: 80px;
+}
+
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background:linear-gradient(to right, #02013d, #1f023f);
+}
+.footer ul{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: center;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+.footer ul li{
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 1;
+    padding: 5px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 13px;
+}
+.footer ul li div p{
+    margin: 5px;
+}
+
+@media screen and (max-width: 1440px) {
+    body{
+        width:500px
+    }
+    header{
+        width: inherit;
+    }
+    .carousel{
+        width: 480px;
+        height: 30vh;
+    }
+    .welcome{
+        width: 93%;
+    }
+    .goto-task{
+        width: 480px;
+    }
+    .display-goods .my-goods .good{
+        width: 48%;
+    }
+    .footer{
+        width: inherit;
+    }
+}
+    
+
+

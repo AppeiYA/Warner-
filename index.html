@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/aca6f80a33.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>Warner Bros</title>
+</head>
+<body>
+    <header id="header" class="transparent-header">
+        <ul>
+            <li><a href="#home"><img src="images/logo.png" alt="Logo"></a><p>Warner Bros</p></li>
+            <li><div>
+            <a class="download-app" href="#download"><i class="fa-solid fa-download"></i> App</a>
+            <a href="#changeLanguage"><i class="fa-solid fa-globe"></i></a></div></li>
+        </ul>
+    </header>
+    <section class="carousel">
+        <div class="images">
+            <img class=".carousel-img" src="images/caro1.jpg" alt="Caro1">
+            <img class=".carousel-img" src="images/caro2.jpg" alt="Caro2">
+            <img class=".carousel-img" src="images/caro3.jpg" alt="Caro3">
+            <img class=".carousel-img" src="images/caro4.jpg" alt="Caro4">
+        </div>
+    </section>
+    <div class="welcome">
+       <p><i class="fa-solid fa-volume-high"></i> Welcome to Warner Bros. Enjoy making money</p> 
+    </div>
+    <section class="invest">
+        <ul>
+            <li>
+                <a href="#volunteer"><div>
+                    <img src="images/volunteer.png" alt="volunteer">
+                    <p>Volunteable Asset</p>
+                </div></a></li>
+            <li>
+                <a href="#withdraw"><div>
+                    <img src="images/withdraw.png" alt="Withdraw">
+                    <p>Withdraw</p>
+                </div></a></li>
+            <li>
+                <a href="#invest"><div>
+                    <img src="images/invest.png" alt="invest">
+                    <p>InvestPlus</p>
+                </div></a></li>
+            <li>
+                <a href="#s-tutorial"><div>
+                    <img src="images/tutorial.png" alt="tutorial">
+                    <p>System Tutorial</p>
+                </div></a></li>
+        </ul>
+    </section>
+    <section class="goto-task">
+        <h1>Task Center</h1>
+        <div class="goto-task-button">
+            <div class="task-icon">
+                <i class="fa-solid fa-list-check"></i>
+            </div>
+            <div class="task-text">
+                <p>Task Center</p>
+                <p>Complete task and receive reward</p>
+            </div>
+        </div>
+    </section>
+    <section class="display-goods">
+        <div class="intro">
+            <p>Trade</p>
+            <button>See More > </button>
+        </div>
+        <div class="my-goods">
+            <div class="good">
+                <img src="images/supercell.jpg" alt="">
+                <div class="good-details">
+                    <p>SuperCell</p>
+                    <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <button>Rating Immediately</button>
+                </div>
+            </div>
+            <div class="good">
+                <img src="images/supercell.jpg" alt="">
+                <div class="good-details">
+                    <p>SuperCell</p>
+                    <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <button>Rating Immediately</button>
+                </div>
+            </div>
+            <div class="good">
+                <img src="images/supercell.jpg" alt="">
+                <div class="good-details">
+                    <p>SuperCell</p>
+                    <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <button>Rating Immediately</button>
+                </div>
+            </div>
+            <div class="good">
+                <img src="images/supercell.jpg" alt="">
+                <div class="good-details">
+                    <p>SuperCell</p>
+                    <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <button>Rating Immediately</button>
+                </div>
+            </div>
+            <div class="good">
+                <img src="images/supercell.jpg" alt="">
+                <div class="good-details">
+                    <p>SuperCell</p>
+                    <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <button>Rating Immediately</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="last-section">
+
+    </section>
+
+    <section class="footer">
+        <ul>
+            <li><a href="#home">
+                    <div>
+                        <p><i class="fa-solid fa-house"></i></p>
+                        <p>Home</p>
+                    </div>
+                </a>
+            </li>
+            <li><a href="#promotion">
+                    <div>
+                        <p><i class="fa-brands fa-microblog"></i></p>
+                        <p>Promotion</p>
+                    </div>
+                </a>
+            </li>
+            <li><a href="#vip">
+                    <div>
+                        <p><i class="fa-regular fa-star"></i></p>
+                        <p>VIP</p>
+                    </div>
+                </a>
+            </li>
+            <li><a href="#invitefriends">
+                    <div>
+                        <p><i class="fa-solid fa-user-group"></i></p>
+                        <p>Invite Friends</p>
+                    </div>
+                </a>
+            </li>
+            <li><a href="#profile">
+                    <div>
+                        <p><i class="fa-solid fa-user"></i></p>
+                        <p>Me</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <script>
+        let indexValue = 0;
+        function slideShow(){
+            setTimeout(slideShow, 5000);
+            let x;
+            const img = document.getElementsByClassName(".carousel-img");
+            for(x = 0; x <img.length; x++){
+                img[x].style.display = "none";
+            }
+            indexValue++;
+            if(indexValue > img.length){
+                indexValue = 1;
+            }
+            img[indexValue-1].style.display = "block";
+        }
+        slideShow();
+    </script>
+</body>
+</html>
